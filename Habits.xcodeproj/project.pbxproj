@@ -18,6 +18,8 @@
 		B94070741BB7517D00097D50 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B94070701BB7517D00097D50 /* Realm.framework */; };
 		B94070751BB7517D00097D50 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B94070711BB7517D00097D50 /* RealmSwift.framework */; };
 		B94070761BB7517D00097D50 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B94070721BB7517D00097D50 /* Result.framework */; };
+		B94070811BB7538600097D50 /* ReactiveCocoa.framework.dSYM in Carthage - Copy Debug Symbols */ = {isa = PBXBuildFile; fileRef = B940707F1BB7538600097D50 /* ReactiveCocoa.framework.dSYM */; };
+		B94070821BB7538600097D50 /* Result.framework.dSYM in Carthage - Copy Debug Symbols */ = {isa = PBXBuildFile; fileRef = B94070801BB7538600097D50 /* Result.framework.dSYM */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		B94070701BB7517D00097D50 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		B94070711BB7517D00097D50 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		B94070721BB7517D00097D50 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		B940707F1BB7538600097D50 /* ReactiveCocoa.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ReactiveCocoa.framework.dSYM; path = Carthage/Build/iOS/ReactiveCocoa.framework.dSYM; sourceTree = "<group>"; };
+		B94070801BB7538600097D50 /* Result.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Result.framework.dSYM; path = Carthage/Build/iOS/Result.framework.dSYM; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,7 +249,9 @@
 			isa = PBXGroup;
 			children = (
 				B940706F1BB7517D00097D50 /* ReactiveCocoa.framework */,
+				B940707F1BB7538600097D50 /* ReactiveCocoa.framework.dSYM */,
 				B94070721BB7517D00097D50 /* Result.framework */,
+				B94070801BB7538600097D50 /* Result.framework.dSYM */,
 				B94070701BB7517D00097D50 /* Realm.framework */,
 				B94070711BB7517D00097D50 /* RealmSwift.framework */,
 			);
