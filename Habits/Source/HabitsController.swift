@@ -8,4 +8,8 @@
 
 import UIKit
 
-class HabitsController: UITableViewController {}
+class HabitsController: UITableViewController {
+    //MARK: Properties
+
+    let viewModel: HabitsViewModel
+}
