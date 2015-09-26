@@ -1,0 +1,4 @@
+github "antitypical/Result" "0.6.0-beta.3"
+github "realm/realm-cocoa" "v0.95.2"
+github "jspahrsummers/xcconfigs" "0.8.1"
+github "ReactiveCocoa/ReactiveCocoa" "77d9765489a9fda99f93c1164795bc152dbd3252"
