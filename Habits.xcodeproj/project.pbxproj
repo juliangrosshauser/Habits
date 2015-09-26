@@ -14,6 +14,10 @@
 		B94070401BB7408B00097D50 /* HabitsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B940703E1BB7408B00097D50 /* HabitsUITests.swift */; settings = {ASSET_TAGS = (); }; };
 		B94070421BB745CA00097D50 /* HabitsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94070411BB745CA00097D50 /* HabitsController.swift */; settings = {ASSET_TAGS = (); }; };
 		B94070441BB7481200097D50 /* HabitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94070431BB7481200097D50 /* HabitsViewModel.swift */; settings = {ASSET_TAGS = (); }; };
+		B94070731BB7517D00097D50 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B940706F1BB7517D00097D50 /* ReactiveCocoa.framework */; };
+		B94070741BB7517D00097D50 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B94070701BB7517D00097D50 /* Realm.framework */; };
+		B94070751BB7517D00097D50 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B94070711BB7517D00097D50 /* RealmSwift.framework */; };
+		B94070761BB7517D00097D50 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B94070721BB7517D00097D50 /* Result.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +58,10 @@
 		B940706C1BB74FA100097D50 /* iOS-Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS-Application.xcconfig"; sourceTree = "<group>"; };
 		B940706D1BB7501600097D50 /* Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
 		B940706E1BB7506B00097D50 /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Common.xcconfig; path = Base/Common.xcconfig; sourceTree = "<group>"; };
+		B940706F1BB7517D00097D50 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
+		B94070701BB7517D00097D50 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		B94070711BB7517D00097D50 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		B94070721BB7517D00097D50 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +69,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B94070731BB7517D00097D50 /* ReactiveCocoa.framework in Frameworks */,
+				B94070761BB7517D00097D50 /* Result.framework in Frameworks */,
+				B94070741BB7517D00097D50 /* Realm.framework in Frameworks */,
+				B94070751BB7517D00097D50 /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +101,7 @@
 				B940703A1BB7408B00097D50 /* HabitsUITests */,
 				B9406FF71BB73EF000097D50 /* Products */,
 				B94070451BB74F6A00097D50 /* Configurations */,
+				B94070771BB7519900097D50 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -226,6 +239,17 @@
 				B94070621BB74F6A00097D50 /* iOS-Base.xcconfig */,
 			);
 			path = iOS;
+			sourceTree = "<group>";
+		};
+		B94070771BB7519900097D50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B940706F1BB7517D00097D50 /* ReactiveCocoa.framework */,
+				B94070721BB7517D00097D50 /* Result.framework */,
+				B94070701BB7517D00097D50 /* Realm.framework */,
+				B94070711BB7517D00097D50 /* RealmSwift.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -496,6 +520,10 @@
 			baseConfigurationReference = B940706C1BB74FA100097D50 /* iOS-Application.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Habits/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.juliangrosshauser.Habits;
@@ -508,6 +536,10 @@
 			baseConfigurationReference = B940706C1BB74FA100097D50 /* iOS-Application.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Habits/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.juliangrosshauser.Habits;
