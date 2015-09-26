@@ -39,6 +39,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B94070791BB7522000097D50 /* Carthage - Copy Debug Symbols */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				B94070811BB7538600097D50 /* ReactiveCocoa.framework.dSYM in Carthage - Copy Debug Symbols */,
+				B94070821BB7538600097D50 /* Result.framework.dSYM in Carthage - Copy Debug Symbols */,
+			);
+			name = "Carthage - Copy Debug Symbols";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		B9406FF61BB73EF000097D50 /* Habits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Habits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B940700A1BB73EF000097D50 /* HabitsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HabitsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -269,6 +284,7 @@
 				B9406FF31BB73EF000097D50 /* Frameworks */,
 				B9406FF41BB73EF000097D50 /* Resources */,
 				B94070781BB751BA00097D50 /* Carthage - Copy Frameworks */,
+				B94070791BB7522000097D50 /* Carthage - Copy Debug Symbols */,
 			);
 			buildRules = (
 			);
