@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B917F7671BB8697E00578877 /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B917F7661BB8697E00578877 /* Habit.swift */; settings = {ASSET_TAGS = (); }; };
 		B940702F1BB7407D00097D50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B94070291BB7407D00097D50 /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
 		B94070301BB7407D00097D50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B940702A1BB7407D00097D50 /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
 		B94070321BB7407D00097D50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B940702E1BB7407D00097D50 /* AppDelegate.swift */; settings = {ASSET_TAGS = (); }; };
@@ -55,6 +56,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B917F7661BB8697E00578877 /* Habit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
 		B9406FF61BB73EF000097D50 /* Habits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Habits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B940700A1BB73EF000097D50 /* HabitsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HabitsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B94070151BB73EF000097D50 /* HabitsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HabitsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,6 +161,7 @@
 				B940702E1BB7407D00097D50 /* AppDelegate.swift */,
 				B94070411BB745CA00097D50 /* HabitsController.swift */,
 				B94070431BB7481200097D50 /* HabitsViewModel.swift */,
+				B917F7661BB8697E00578877 /* Habit.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -428,6 +431,7 @@
 				B94070441BB7481200097D50 /* HabitsViewModel.swift in Sources */,
 				B94070421BB745CA00097D50 /* HabitsController.swift in Sources */,
 				B94070321BB7407D00097D50 /* AppDelegate.swift in Sources */,
+				B917F7671BB8697E00578877 /* Habit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
