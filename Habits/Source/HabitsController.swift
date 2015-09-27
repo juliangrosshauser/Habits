@@ -15,9 +15,10 @@ class HabitsController: UITableViewController {
 
     //MARK: Initialization
 
-    init(viewModel: HabitsViewModel) {
+    init(viewModel: HabitsViewModel, dataSource: HabitsDataSource) {
         self.viewModel = viewModel
         super.init(style: .Plain)
+        tableView.dataSource = dataSource
     }
 
     required init?(coder aDecoder: NSCoder) {
