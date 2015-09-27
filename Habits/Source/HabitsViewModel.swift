@@ -6,4 +6,12 @@
 //  Copyright © 2015 Julian Grosshauser. All rights reserved.
 //
 
-class HabitsViewModel {}
+class HabitsViewModel {
+    //MARK: Properties
+    
+    private let store = Store()
+    
+    var habits: Habits {
+        return store.habits
+    }
+}
