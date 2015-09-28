@@ -24,6 +24,8 @@
 		B94070761BB7517D00097D50 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B94070721BB7517D00097D50 /* Result.framework */; };
 		B94070811BB7538600097D50 /* ReactiveCocoa.framework.dSYM in Carthage - Copy Debug Symbols */ = {isa = PBXBuildFile; fileRef = B940707F1BB7538600097D50 /* ReactiveCocoa.framework.dSYM */; };
 		B94070821BB7538600097D50 /* Result.framework.dSYM in Carthage - Copy Debug Symbols */ = {isa = PBXBuildFile; fileRef = B94070801BB7538600097D50 /* Result.framework.dSYM */; };
+		B9E7E0A61BB9EFCE00747C0D /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E7E0A41BB9EFCE00747C0D /* Nimble.framework */; };
+		B9E7E0A71BB9EFCE00747C0D /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E7E0A51BB9EFCE00747C0D /* Quick.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,8 @@
 		B94070721BB7517D00097D50 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		B940707F1BB7538600097D50 /* ReactiveCocoa.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ReactiveCocoa.framework.dSYM; path = Carthage/Build/iOS/ReactiveCocoa.framework.dSYM; sourceTree = "<group>"; };
 		B94070801BB7538600097D50 /* Result.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Result.framework.dSYM; path = Carthage/Build/iOS/Result.framework.dSYM; sourceTree = "<group>"; };
+		B9E7E0A41BB9EFCE00747C0D /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		B9E7E0A51BB9EFCE00747C0D /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9E7E0A71BB9EFCE00747C0D /* Quick.framework in Frameworks */,
+				B9E7E0A61BB9EFCE00747C0D /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +287,8 @@
 				B94070801BB7538600097D50 /* Result.framework.dSYM */,
 				B94070701BB7517D00097D50 /* Realm.framework */,
 				B94070711BB7517D00097D50 /* RealmSwift.framework */,
+				B9E7E0A51BB9EFCE00747C0D /* Quick.framework */,
+				B9E7E0A41BB9EFCE00747C0D /* Nimble.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -612,6 +620,10 @@
 			baseConfigurationReference = B940706D1BB7501600097D50 /* Test.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = HabitsTests/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.juliangrosshauser.HabitsTests;
@@ -625,6 +637,10 @@
 			baseConfigurationReference = B940706D1BB7501600097D50 /* Test.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = HabitsTests/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.juliangrosshauser.HabitsTests;
