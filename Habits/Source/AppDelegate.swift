@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,7 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }()
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        let store = Store()
+        let realm = try! Realm()
+        let store = Store(realm: realm)
         let habitsViewModel = HabitsViewModel(store: store)
         let habitsDataSource = HabitsDataSource(viewModel: habitsViewModel)
         let habitsController = HabitsController(viewModel: habitsViewModel, dataSource: habitsDataSource)
