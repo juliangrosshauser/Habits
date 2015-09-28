@@ -26,6 +26,8 @@
 		B94070821BB7538600097D50 /* Result.framework.dSYM in Carthage - Copy Debug Symbols */ = {isa = PBXBuildFile; fileRef = B94070801BB7538600097D50 /* Result.framework.dSYM */; };
 		B9E7E0A61BB9EFCE00747C0D /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E7E0A41BB9EFCE00747C0D /* Nimble.framework */; };
 		B9E7E0A71BB9EFCE00747C0D /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E7E0A51BB9EFCE00747C0D /* Quick.framework */; };
+		B9E7E0AB1BB9F06300747C0D /* Nimble.framework.dSYM in Carthage - Copy Debug Symbols */ = {isa = PBXBuildFile; fileRef = B9E7E0A91BB9F06300747C0D /* Nimble.framework.dSYM */; };
+		B9E7E0AD1BB9F09200747C0D /* Quick.framework.dSYM in Carthage - Copy Debug Symbols */ = {isa = PBXBuildFile; fileRef = B9E7E0AA1BB9F06300747C0D /* Quick.framework.dSYM */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,18 @@
 			files = (
 				B94070811BB7538600097D50 /* ReactiveCocoa.framework.dSYM in Carthage - Copy Debug Symbols */,
 				B94070821BB7538600097D50 /* Result.framework.dSYM in Carthage - Copy Debug Symbols */,
+			);
+			name = "Carthage - Copy Debug Symbols";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9E7E0A81BB9F03B00747C0D /* Carthage - Copy Debug Symbols */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				B9E7E0AD1BB9F09200747C0D /* Quick.framework.dSYM in Carthage - Copy Debug Symbols */,
+				B9E7E0AB1BB9F06300747C0D /* Nimble.framework.dSYM in Carthage - Copy Debug Symbols */,
 			);
 			name = "Carthage - Copy Debug Symbols";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,6 +107,8 @@
 		B94070801BB7538600097D50 /* Result.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Result.framework.dSYM; path = Carthage/Build/iOS/Result.framework.dSYM; sourceTree = "<group>"; };
 		B9E7E0A41BB9EFCE00747C0D /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		B9E7E0A51BB9EFCE00747C0D /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		B9E7E0A91BB9F06300747C0D /* Nimble.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Nimble.framework.dSYM; path = Carthage/Build/iOS/Nimble.framework.dSYM; sourceTree = "<group>"; };
+		B9E7E0AA1BB9F06300747C0D /* Quick.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Quick.framework.dSYM; path = Carthage/Build/iOS/Quick.framework.dSYM; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -288,7 +304,9 @@
 				B94070701BB7517D00097D50 /* Realm.framework */,
 				B94070711BB7517D00097D50 /* RealmSwift.framework */,
 				B9E7E0A51BB9EFCE00747C0D /* Quick.framework */,
+				B9E7E0AA1BB9F06300747C0D /* Quick.framework.dSYM */,
 				B9E7E0A41BB9EFCE00747C0D /* Nimble.framework */,
+				B9E7E0A91BB9F06300747C0D /* Nimble.framework.dSYM */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -322,6 +340,7 @@
 				B94070061BB73EF000097D50 /* Sources */,
 				B94070071BB73EF000097D50 /* Frameworks */,
 				B94070081BB73EF000097D50 /* Resources */,
+				B9E7E0A81BB9F03B00747C0D /* Carthage - Copy Debug Symbols */,
 			);
 			buildRules = (
 			);
