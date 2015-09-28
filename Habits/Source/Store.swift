@@ -13,7 +13,7 @@ typealias Habits = Results<Habit>
 class Store {
     //MARK: Properties
 
-    let realm = try! Realm()
+    private let realm = try! Realm()
 
     var habits: Habits {
         return realm.objects(Habit)
