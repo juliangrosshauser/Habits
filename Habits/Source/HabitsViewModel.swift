@@ -9,9 +9,15 @@
 class HabitsViewModel {
     //MARK: Properties
     
-    private let store = Store()
+    private let store: Store
     
     var habits: Habits {
         return store.habits
+    }
+
+    //MARK: Initialization
+
+    init(store: Store) {
+        self.store = store
     }
 }

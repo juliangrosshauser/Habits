@@ -17,7 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }()
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        let habitsViewModel = HabitsViewModel()
+        let store = Store()
+        let habitsViewModel = HabitsViewModel(store: store)
         let habitsDataSource = HabitsDataSource(viewModel: habitsViewModel)
         let habitsController = HabitsController(viewModel: habitsViewModel, dataSource: habitsDataSource)
         let navigationController = UINavigationController(rootViewController: habitsController)
