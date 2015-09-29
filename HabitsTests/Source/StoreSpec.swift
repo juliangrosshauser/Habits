@@ -25,6 +25,13 @@ class StoreSpec: QuickSpec {
             }
         }
 
-        describe("Store") {}
+        describe("Store") {
+            beforeEach {
+                // Make sure Realm is empty before every test
+                realm.write {
+                    realm.deleteAll()
+                }
+            }
+        }
     }
 }
