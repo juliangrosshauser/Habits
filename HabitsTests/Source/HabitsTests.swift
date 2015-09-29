@@ -10,12 +10,4 @@ import Quick
 import Nimble
 @testable import Habits
 
-class HabitsTests: XCTestCase {
-    override func setUp() {
-        super.setUp()
-    }
-    
-    override func tearDown() {
-        super.tearDown()
-    }
-}
+class HabitsTests: XCTestCase {}
