@@ -1,5 +1,5 @@
 //
-//  HabitsTests.swift
+//  StoreSpec.swift
 //  HabitsTests
 //
 //  Created by Julian Grosshauser on 26/09/15.
@@ -10,4 +10,4 @@ import Quick
 import Nimble
 @testable import Habits
 
-class HabitsTests: XCTestCase {}
+class StoreSpec: QuickSpec {}
