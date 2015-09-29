@@ -6,7 +6,8 @@
 //  Copyright © 2015 Julian Grosshauser. All rights reserved.
 //
 
-import XCTest
+import Quick
+import Nimble
 @testable import Habits
 
 class HabitsTests: XCTestCase {
