@@ -8,6 +8,23 @@
 
 import Quick
 import Nimble
+import RealmSwift
 @testable import Habits
 
-class StoreSpec: QuickSpec {}
+class StoreSpec: QuickSpec {
+    override func spec() {
+        var store: Store!
+        var realm: Realm!
+
+        beforeSuite {
+            do {
+                realm = try Realm(configuration: Realm.Configuration(inMemoryIdentifier: "StoreSpec"))
+                store = Store(realm: realm)
+            } catch {
+                XCTFail("Failed to initialize Realm: \(error)")
+            }
+        }
+
+        describe("Store") {}
+    }
+}
