@@ -55,6 +55,12 @@ class StoreSpec: QuickSpec {
                         }
                     }
                 }
+
+                context("Database contains no Habit objects") {
+                    it("returns no objects") {
+                        expect(store.habits).to(haveCount(0))
+                    }
+                }
             }
         }
     }
