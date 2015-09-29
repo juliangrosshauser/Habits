@@ -24,6 +24,8 @@
 		B94070761BB7517D00097D50 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B94070721BB7517D00097D50 /* Result.framework */; };
 		B94070811BB7538600097D50 /* ReactiveCocoa.framework.dSYM in Carthage - Copy Debug Symbols */ = {isa = PBXBuildFile; fileRef = B940707F1BB7538600097D50 /* ReactiveCocoa.framework.dSYM */; };
 		B94070821BB7538600097D50 /* Result.framework.dSYM in Carthage - Copy Debug Symbols */ = {isa = PBXBuildFile; fileRef = B94070801BB7538600097D50 /* Result.framework.dSYM */; };
+		B9E1F0011BBB4C2E00AE9A9B /* Quick.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B9E7E0A51BB9EFCE00747C0D /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B9E1F0021BBB4C3100AE9A9B /* Nimble.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B9E7E0A41BB9EFCE00747C0D /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B9E7E0A61BB9EFCE00747C0D /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E7E0A41BB9EFCE00747C0D /* Nimble.framework */; };
 		B9E7E0A71BB9EFCE00747C0D /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E7E0A51BB9EFCE00747C0D /* Quick.framework */; };
 		B9E7E0AB1BB9F06300747C0D /* Nimble.framework.dSYM in Carthage - Copy Debug Symbols */ = {isa = PBXBuildFile; fileRef = B9E7E0A91BB9F06300747C0D /* Nimble.framework.dSYM */; };
@@ -58,6 +60,18 @@
 				B94070821BB7538600097D50 /* Result.framework.dSYM in Carthage - Copy Debug Symbols */,
 			);
 			name = "Carthage - Copy Debug Symbols";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9E1F0001BBB4C0E00AE9A9B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B9E1F0011BBB4C2E00AE9A9B /* Quick.framework in Embed Frameworks */,
+				B9E1F0021BBB4C3100AE9A9B /* Nimble.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B9E7E0A81BB9F03B00747C0D /* Carthage - Copy Debug Symbols */ = {
@@ -340,6 +354,7 @@
 				B94070061BB73EF000097D50 /* Sources */,
 				B94070071BB73EF000097D50 /* Frameworks */,
 				B94070081BB73EF000097D50 /* Resources */,
+				B9E1F0001BBB4C0E00AE9A9B /* Embed Frameworks */,
 				B9E7E0A81BB9F03B00747C0D /* Carthage - Copy Debug Symbols */,
 			);
 			buildRules = (
