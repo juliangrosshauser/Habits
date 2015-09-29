@@ -32,6 +32,30 @@ class StoreSpec: QuickSpec {
                     realm.deleteAll()
                 }
             }
+
+            describe("habits") {
+                context("Database contains objects") {
+                    var habits: [Habit]!
+
+                    beforeEach {
+                        habits = [Habit(name: "Habit1"), Habit(name: "Habit2"), Habit(name: "Habit3")]
+
+                        realm.write {
+                            realm.add(habits)
+                        }
+                    }
+
+                    it("returns all Habit objects in database") {
+                        // Can't be directly compared, because `store.habits` is of type `Results<Habit>` and `habits` of type `[Habit]`
+
+                        expect(store.habits).to(haveCount(habits.count))
+
+                        for (index, habit) in habits.enumerate() {
+                            expect(habit) == store.habits[index]
+                        }
+                    }
+                }
+            }
         }
     }
 }
