@@ -1,0 +1,7 @@
+[
+  "-project", "Habits.xcodeproj",
+  "-scheme", "Habits",
+  "-configuration", "Debug",
+  "-sdk", "iphonesimulator",
+  "-destination", "name=iPhone 6s Plus"
+]
