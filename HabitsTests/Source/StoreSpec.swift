@@ -78,6 +78,32 @@ class StoreSpec: QuickSpec {
                     expect(realm.objectForPrimaryKey(Habit.self, key: habit.id)).toNot(beNil())
                 }
             }
+
+            describe("deleteHabit") {
+                var habit: Habit!
+
+                // We need to store the primary key separately, because we can't access `habit`'s `id` property after it got deleted
+                var primaryKey: String!
+
+                beforeEach {
+                    habit = Habit(name: "Habit")
+                    primaryKey = habit.id
+
+                    realm.write {
+                        realm.add(habit)
+                    }
+
+                    // Make sure this object is in the database
+                    expect(realm.objectForPrimaryKey(Habit.self, key: primaryKey)).toNot(beNil())
+                }
+
+                it("deletes Habit object from database") {
+                    store.deleteHabit(habit)
+
+                    // Don't try to access `habit.id` here!
+                    expect(realm.objectForPrimaryKey(Habit.self, key: primaryKey)).to(beNil())
+                }
+            }
         }
     }
 }
