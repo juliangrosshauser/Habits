@@ -32,4 +32,10 @@ class Store {
             self.realm.add(habit)
         }
     }
+
+    func deleteHabit(habit: Habit) {
+        realm.write { [unowned self] in
+            self.realm.delete(habit)
+        }
+    }
 }
