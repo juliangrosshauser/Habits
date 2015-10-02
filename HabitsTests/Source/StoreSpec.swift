@@ -62,6 +62,22 @@ class StoreSpec: QuickSpec {
                     }
                 }
             }
+
+            describe("addHabit") {
+                var habit: Habit!
+
+                beforeEach {
+                    habit = Habit(name: "Habit")
+
+                    // Make sure this object isn't already in the database
+                    expect(realm.objectForPrimaryKey(Habit.self, key: habit.id)).to(beNil())
+                }
+
+                it("adds Habit object to database") {
+                    store.addHabit(habit)
+                    expect(realm.objectForPrimaryKey(Habit.self, key: habit.id)).toNot(beNil())
+                }
+            }
         }
     }
 }
