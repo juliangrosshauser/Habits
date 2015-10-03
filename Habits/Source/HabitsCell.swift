@@ -8,8 +8,8 @@
 
 import UIKit
 
-class HabitsCell: UITableViewCell {
+class HabitsCell: UICollectionViewCell {
     func configure(habit: Habit) {
-        textLabel?.text = habit.name
+        backgroundColor = .whiteColor()
     }
 }
