@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HabitsController: UITableViewController {
+class HabitsController: UICollectionViewController {
     //MARK: Properties
 
     let viewModel: HabitsViewModel
@@ -17,8 +17,8 @@ class HabitsController: UITableViewController {
 
     init(viewModel: HabitsViewModel, dataSource: HabitsDataSource) {
         self.viewModel = viewModel
-        super.init(style: .Plain)
-        tableView.dataSource = dataSource
+        super.init(collectionViewLayout: UICollectionViewFlowLayout())
+        collectionView?.dataSource = dataSource
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -29,6 +29,6 @@ class HabitsController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.registerClass(HabitsCell.self, forCellReuseIdentifier: String(HabitsCell))
+        collectionView?.registerClass(HabitsCell.self, forCellWithReuseIdentifier: String(HabitsCell))
     }
 }
