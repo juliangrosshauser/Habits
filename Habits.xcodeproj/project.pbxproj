@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B917F7611BB8676E00578877 /* HabitsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B917F7601BB8676E00578877 /* HabitsDataSource.swift */; settings = {ASSET_TAGS = (); }; };
 		B917F7631BB868B600578877 /* HabitsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B917F7621BB868B600578877 /* HabitsCell.swift */; settings = {ASSET_TAGS = (); }; };
 		B917F7651BB8690500578877 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = B917F7641BB8690500578877 /* Store.swift */; settings = {ASSET_TAGS = (); }; };
 		B917F7671BB8697E00578877 /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B917F7661BB8697E00578877 /* Habit.swift */; settings = {ASSET_TAGS = (); }; };
@@ -89,7 +88,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B917F7601BB8676E00578877 /* HabitsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitsDataSource.swift; sourceTree = "<group>"; };
 		B917F7621BB868B600578877 /* HabitsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitsCell.swift; sourceTree = "<group>"; };
 		B917F7641BB8690500578877 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		B917F7661BB8697E00578877 /* Habit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
@@ -203,7 +201,6 @@
 				B940702E1BB7407D00097D50 /* AppDelegate.swift */,
 				B94070411BB745CA00097D50 /* HabitsController.swift */,
 				B94070431BB7481200097D50 /* HabitsViewModel.swift */,
-				B917F7601BB8676E00578877 /* HabitsDataSource.swift */,
 				B917F7621BB868B600578877 /* HabitsCell.swift */,
 				B917F7641BB8690500578877 /* Store.swift */,
 				B917F7661BB8697E00578877 /* Habit.swift */,
@@ -484,7 +481,6 @@
 				B94070321BB7407D00097D50 /* AppDelegate.swift in Sources */,
 				B917F7671BB8697E00578877 /* Habit.swift in Sources */,
 				B917F7651BB8690500578877 /* Store.swift in Sources */,
-				B917F7611BB8676E00578877 /* HabitsDataSource.swift in Sources */,
 				B917F7631BB868B600578877 /* HabitsCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
