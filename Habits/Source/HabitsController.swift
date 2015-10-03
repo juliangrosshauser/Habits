@@ -9,6 +9,7 @@
 import UIKit
 
 class HabitsController: UICollectionViewController {
+    
     //MARK: Properties
 
     let viewModel: HabitsViewModel

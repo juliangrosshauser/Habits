@@ -10,6 +10,7 @@ import Foundation
 import RealmSwift
 
 class Habit: Object {
+    
     //MARK: Properties
 
     dynamic var id = NSUUID().UUIDString

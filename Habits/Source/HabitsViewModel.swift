@@ -7,6 +7,7 @@
 //
 
 class HabitsViewModel {
+    
     //MARK: Properties
     
     private let store: Store

@@ -11,6 +11,7 @@ import RealmSwift
 typealias Habits = Results<Habit>
 
 class Store {
+    
     //MARK: Properties
 
     private let realm: Realm
