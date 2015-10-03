@@ -15,10 +15,9 @@ class HabitsController: UICollectionViewController {
 
     //MARK: Initialization
 
-    init(viewModel: HabitsViewModel, dataSource: HabitsDataSource) {
+    init(viewModel: HabitsViewModel) {
         self.viewModel = viewModel
         super.init(collectionViewLayout: UICollectionViewFlowLayout())
-        collectionView?.dataSource = dataSource
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -30,5 +29,17 @@ class HabitsController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView?.registerClass(HabitsCell.self, forCellWithReuseIdentifier: String(HabitsCell))
+    }
+
+    //MARK: UICollectionViewDataSource
+
+    override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return viewModel.habits.count
+    }
+
+    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(String(HabitsCell), forIndexPath: indexPath) as! HabitsCell
+        cell.configure(viewModel.habits[indexPath.row])
+        return cell
     }
 }

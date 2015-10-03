@@ -21,8 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let realm = try! Realm()
         let store = Store(realm: realm)
         let habitsViewModel = HabitsViewModel(store: store)
-        let habitsDataSource = HabitsDataSource(viewModel: habitsViewModel)
-        let habitsController = HabitsController(viewModel: habitsViewModel, dataSource: habitsDataSource)
+        let habitsController = HabitsController(viewModel: habitsViewModel)
         let navigationController = UINavigationController(rootViewController: habitsController)
 
         window?.rootViewController = navigationController
