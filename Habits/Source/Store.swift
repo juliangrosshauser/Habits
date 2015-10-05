@@ -6,6 +6,7 @@
 //  Copyright © 2015 Julian Grosshauser. All rights reserved.
 //
 
+import Foundation
 import RealmSwift
 
 typealias Habits = Results<Habit>
@@ -28,12 +29,14 @@ class Store {
 
     //MARK: Managing Habits
 
-    func addHabit(name: String) {
+    func addHabit(name: String) -> NSIndexPath {
         let habit = Habit(name: name)
 
         realm.write { [unowned self] in
             self.realm.add(habit)
         }
+
+        return NSIndexPath(forItem: habits.count, inSection: 0)
     }
 
     func deleteHabit(habit: Habit) {
