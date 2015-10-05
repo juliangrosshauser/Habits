@@ -28,7 +28,9 @@ class Store {
 
     //MARK: Managing Habits
 
-    func addHabit(habit: Habit) {
+    func addHabit(name: String) {
+        let habit = Habit(name: name)
+
         realm.write { [unowned self] in
             self.realm.add(habit)
         }
