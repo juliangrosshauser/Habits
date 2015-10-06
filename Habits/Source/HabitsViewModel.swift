@@ -28,6 +28,14 @@ class HabitsViewModel {
 
     init(store: Store) {
         self.store = store
+
+        addHabit = Action(enabledIf: addHabitEnabled) { [unowned self] name in
+            self.addHabit(name)
+        }
+
+        deleteHabit = Action(enabledIf: deleteHabitEnabled) { [unowned self] primaryKey in
+            self.deleteHabit(primaryKey)
+        }
     }
 
     //MARK: Manage Habits
