@@ -9,6 +9,8 @@
 import Foundation
 import RealmSwift
 
+typealias PrimaryKey = String
+
 class Habit: Object {
     
     //MARK: Properties
@@ -25,7 +27,7 @@ class Habit: Object {
 
     //MARK: Object
 
-    override static func primaryKey() -> String? {
+    override static func primaryKey() -> PrimaryKey? {
         return "id"
     }
 }
