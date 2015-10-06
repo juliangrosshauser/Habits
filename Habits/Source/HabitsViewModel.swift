@@ -18,6 +18,12 @@ class HabitsViewModel {
         return store.habits
     }
 
+    let addHabitEnabled = MutableProperty(true)
+    let deleteHabitEnabled = MutableProperty(true)
+
+    private(set) var addHabit: Action<String, NSIndexPath, NoError>!
+    private(set) var deleteHabit: Action<PrimaryKey, NSIndexPath, StoreError>!
+
     //MARK: Initialization
 
     init(store: Store) {
