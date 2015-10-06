@@ -29,4 +29,8 @@ class HabitsViewModel {
     private func addHabit(name: String) -> SignalProducer<NSIndexPath, NoError> {
         return SignalProducer(value: store.addHabit(name))
     }
+
+    private func deleteHabit(primaryKey: PrimaryKey) -> SignalProducer<NSIndexPath, StoreError> {
+        return SignalProducer(result: store.deleteHabit(primaryKey))
+    }
 }
