@@ -8,6 +8,7 @@
 
 import Foundation
 import RealmSwift
+import Result
 
 typealias Habits = Results<Habit>
 
@@ -39,9 +40,13 @@ class Store {
         return NSIndexPath(forItem: habits.count, inSection: 0)
     }
 
-    func deleteHabit(habit: Habit) {
+    func deleteHabit(primaryKey: PrimaryKey) -> Result<NSIndexPath, StoreError> {
+        guard let habit = realm.objectForPrimaryKey(Habit.self, key: primaryKey) else { return .Failure(.PrimaryKeyDoesntExist) }
+
         realm.write { [unowned self] in
             self.realm.delete(habit)
         }
+
+        return .Success(NSIndexPath(forItem: habits.count, inSection: 0))
     }
 }
