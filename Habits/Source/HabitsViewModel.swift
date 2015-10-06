@@ -6,6 +6,8 @@
 //  Copyright © 2015 Julian Grosshauser. All rights reserved.
 //
 
+import ReactiveCocoa
+
 class HabitsViewModel {
     
     //MARK: Properties
@@ -20,5 +22,11 @@ class HabitsViewModel {
 
     init(store: Store) {
         self.store = store
+    }
+
+    //MARK: Manage Habits
+
+    private func addHabit(name: String) -> SignalProducer<NSIndexPath, NoError> {
+        return SignalProducer(value: store.addHabit(name))
     }
 }
