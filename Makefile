@@ -14,7 +14,7 @@ Carthage:
 	carthage bootstrap --platform iOS
 
 test: Carthage
-	set -e pipefail && xcodebuild \
+	set -o pipefail && xcodebuild \
 	-project $(PROJECT) \
 	-scheme $(SCHEME) \
 	-configuration $(CONFIGURATION) \
