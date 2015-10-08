@@ -23,6 +23,7 @@
 		B94070761BB7517D00097D50 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B94070721BB7517D00097D50 /* Result.framework */; };
 		B94070811BB7538600097D50 /* ReactiveCocoa.framework.dSYM in Carthage - Copy Debug Symbols */ = {isa = PBXBuildFile; fileRef = B940707F1BB7538600097D50 /* ReactiveCocoa.framework.dSYM */; };
 		B94070821BB7538600097D50 /* Result.framework.dSYM in Carthage - Copy Debug Symbols */ = {isa = PBXBuildFile; fileRef = B94070801BB7538600097D50 /* Result.framework.dSYM */; };
+		B94134631BC1E19800156621 /* HabitsCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94134621BC1E19800156621 /* HabitsCollectionViewLayout.swift */; settings = {ASSET_TAGS = (); }; };
 		B9E1F0011BBB4C2E00AE9A9B /* Quick.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B9E7E0A51BB9EFCE00747C0D /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B9E1F0021BBB4C3100AE9A9B /* Nimble.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B9E7E0A41BB9EFCE00747C0D /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B9E219C51BC32C0F0052A864 /* StoreError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E219C41BC32C0F0052A864 /* StoreError.swift */; settings = {ASSET_TAGS = (); }; };
@@ -118,6 +119,7 @@
 		B94070721BB7517D00097D50 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		B940707F1BB7538600097D50 /* ReactiveCocoa.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ReactiveCocoa.framework.dSYM; path = Carthage/Build/iOS/ReactiveCocoa.framework.dSYM; sourceTree = "<group>"; };
 		B94070801BB7538600097D50 /* Result.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Result.framework.dSYM; path = Carthage/Build/iOS/Result.framework.dSYM; sourceTree = "<group>"; };
+		B94134621BC1E19800156621 /* HabitsCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitsCollectionViewLayout.swift; sourceTree = "<group>"; };
 		B9E219C41BC32C0F0052A864 /* StoreError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreError.swift; sourceTree = "<group>"; };
 		B9E7E0A41BB9EFCE00747C0D /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		B9E7E0A51BB9EFCE00747C0D /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				B940702E1BB7407D00097D50 /* AppDelegate.swift */,
+				B94134621BC1E19800156621 /* HabitsCollectionViewLayout.swift */,
 				B94070411BB745CA00097D50 /* HabitsController.swift */,
 				B94070431BB7481200097D50 /* HabitsViewModel.swift */,
 				B9E219C41BC32C0F0052A864 /* StoreError.swift */,
@@ -483,6 +486,7 @@
 				B94070421BB745CA00097D50 /* HabitsController.swift in Sources */,
 				B9E219C51BC32C0F0052A864 /* StoreError.swift in Sources */,
 				B94070321BB7407D00097D50 /* AppDelegate.swift in Sources */,
+				B94134631BC1E19800156621 /* HabitsCollectionViewLayout.swift in Sources */,
 				B917F7671BB8697E00578877 /* Habit.swift in Sources */,
 				B917F7651BB8690500578877 /* Store.swift in Sources */,
 				B917F7631BB868B600578877 /* HabitsCell.swift in Sources */,
